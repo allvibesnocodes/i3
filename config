@@ -201,13 +201,13 @@ bar {
 # change background depending on the day of week
 exec_always --no-startup-id ~/.config/i3/startupscripts/changewallpaper.sh
 # monitor setup
-exec_always ~/.config/i3/startupscripts/monitorlayout.sh
+exec_always --no-startup-id ~/.config/i3/startupscripts/monitorlayout.sh
 # setup volume icon on startup
 exec --no-startup-id volumeicon 
 # change the screensaver/lock timeout
-exec_always xset s 3600 3600
+exec_always --no-startup-id xset s 3600 3600
 # change the i3 monitor power off settings
-exec_always xset dpms 0 0 3600
+exec_always --no-startup-id xset dpms 0 0 3600
 # enable flameshot screenshot
 bindsym Print exec --no-startup-id flameshot gui
 bindsym Ctrl+Print exec --no-startup-id flameshot gui -d 3000
